@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
-
+import Footer from "./Components/Footer/Footer";
 import wordsToNumbers from "words-to-numbers";
 import NewsCards from "./Components/NewsCards/NewsCards";
 import useStyles from "./styles";
@@ -48,6 +48,7 @@ const App = () => {
         />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
+      <Footer />
     </div>
   );
 };
